@@ -8,9 +8,10 @@ class Button extends Component {
         onClick={this.props.method}
         style={{ backgroundColor: this.props.color }}
         className="Default-button"
-
+        disabled={this.props.disabled}
       >
-        {this.props.text || this.props.image}
+        {this.props.text}
+        {this.props.image}
       </button>
     );
   }
