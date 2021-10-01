@@ -1,5 +1,7 @@
 import { Component, useState } from "react";
 import "./LoginForm.css";
+import Input from "components/Input/Input";
+import Button from "components/Button/Button";
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -22,19 +24,17 @@ const LoginForm = () => {
             SubmitLogin({ user: username, pass: password, event: e })
           }
         >
-          <input
-            onInput={(e) => setUsername(e.target.value)}
+          <Input
+            setState= {setUsername}
             type="text"
-            placeholder="username"
-            className="loginInput"
-          ></input>
-          <input
-            onInput={(e) => setPassword(e.target.value)}
+            placeholder="username"/>
+          
+          <Input
+            setState= {setPassword}
             type="text"
             placeholder="password"
-            className="loginInput"
-          ></input>
-          <input className="loginSubmit" type="submit" value="Login"></input>
+          />
+          <Input className="loginSubmit" type="submit" value="Login" color="lightblue"/>
         </form>
       </div>
     </>
