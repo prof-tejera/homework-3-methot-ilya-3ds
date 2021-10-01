@@ -1,9 +1,20 @@
-import { Component } from 'react';
-import './Button.css';
+import { Component } from "react";
+import "./Button.css";
 
 class Button extends Component {
   render() {
-    return <button className="Default-button">{this.props.text}</button>;
+    return (
+      <button
+        onClick={this.props.method}
+        style={{ backgroundColor: this.props.color }}
+        className="Default-button"
+        disabled={this.props.disabled}
+        selected={this.props.selected}
+      >
+        {this.props.text}
+        {this.props.image}
+      </button>
+    );
   }
 }
 
