@@ -1,0 +1,67 @@
+.loginWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 20vh;
+
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+
+    padding: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+
+    width: auto;
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.loginSubmit {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+
+    background-color: rgb(148, 187, 253);
+
+    width: 100%;
+    height: auto;
+
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.loginForm > *:hover {
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.loginSubmit:active {
+    background-color: rgb(59, 59, 218);
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
